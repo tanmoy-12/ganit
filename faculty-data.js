@@ -54,15 +54,15 @@ const facultyData = [
                 const img = document.createElement('img');
                 img.src = `faculty\\faculty${index + 1}.jpg`; // Assuming images are named faculty1.png, faculty2.png, ...
                 img.alt = "Avatar";
-                img.style.width = "350px";
-                img.style.height = "400px";
+                img.style.width = "250px";
+                img.style.height = "300px";
 
                 flipCardFront.appendChild(img);
 
                 const flipCardBack = document.createElement('div');
                 flipCardBack.classList.add('flip-card-back');
 
-                const h1 = document.createElement('h1');
+                const h1 = document.createElement('h2');
                 h1.innerText = faculty.name;
 
                 const pAge = document.createElement('p');

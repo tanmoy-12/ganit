@@ -361,6 +361,20 @@
             const sidebar = document.querySelector('.sidebar');
             sidebar.style.display = 'none';
         }
+
+        document.addEventListener('DOMContentLoaded', function () {
+    const detailsElements = document.querySelectorAll('details');
+    detailsElements.forEach(function (details) {
+        details.addEventListener('click', function () {
+            detailsElements.forEach(function (otherDetails) {
+                if (otherDetails !== details) {
+                    otherDetails.removeAttribute('open');
+                }
+            });
+        });
+    });
+});
+
     </script>
 </body>
 </html>

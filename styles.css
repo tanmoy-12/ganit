@@ -35,20 +35,27 @@ a{
 
 
 .navbar {
-    background-color: rgb(161, 138, 76);
+    background-color: rgb(96, 70, 0);
     color: #fff;
     font-family: Arial, sans-serif;
-    height: 60px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
 .navbar .logo {
     font-size: 32px;
+    top: 2px;
+    left: 20px;
+    position: absolute;
 }
 
 .menu {
     display: flex;
     gap: 1em;
-    width: 100%;
+    width: 80%;
     justify-content: center;
     align-items: center;
     list-style: none;
@@ -150,8 +157,8 @@ nav a{
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
     flex-direction: column;
+    display: none;
     align-items: flex-start;
     justify-content: flex-start;
 }
@@ -761,4 +768,71 @@ details[open] {
 
 .footer-social i:hover{
     color: #000721;
+}
+
+
+@media (max-width:1350px)  {
+    .choose-right{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto ;
+    }
+    
+}
+
+@media (max-width:1070px)  {
+    .navbar{
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .menu{
+        gap: 0rem;
+        right: 2px !important;
+        position: relative;
+    }
+
+    .menu li a{
+        padding:7px 0.4rem;
+    }
+}
+
+@media (max-width:550px)  {
+    #pc-view{
+        display: none;
+    }
+    
+    #mobile-view{
+        display: contents;
+    }
+
+    .navbar{
+        height: 80px;
+    }
+
+    .menu-toggler{
+        left: 10px;
+        position: absolute;
+    }
+
+    .menu-toggler h2{
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .sidebar{
+        position: fixed;
+        left: 0;
+        top: 80px;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: rgba(157, 157, 157, 0.559);
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        display: none;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
 }

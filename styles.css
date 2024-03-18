@@ -523,10 +523,15 @@ nav a{
     justify-content: center;
     text-align: center;
     padding: 0 20px 10px 20px;
+    transition: all ease 0.4s;
 }
 
 .resource-image img{
     width: 90%;
+}
+
+.resource-image:hover{
+    transform: scale(1.03);
 }
 
 #reource-1{
@@ -677,14 +682,15 @@ details[open] {
 /* Footer Container */
 .footer-container {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: center;
+    padding:40px 20px;
     background-color: #f2f2f2;
 }
 
 /* Footer Company Box */
 .footer-company-box {
     width: 30%;
+    margin-right: 30px;
 }
 
 .footer-company-box .logo {
@@ -707,7 +713,7 @@ details[open] {
 
 /* Footer Link Box */
 .footer-link-box {
-    width: 25%;
+    width: 15%;
 }
 
 .footer-link-box strong {
@@ -728,7 +734,13 @@ details[open] {
 
 .footer-link-box ul li a {
     color: #666;
+    font-weight: 600;
     text-decoration: none;
+    transition: all ease 0.2s;
+}
+
+.footer-link-box ul li a:hover{
+    color: #000d1a;
 }
 
 /* Footer Bottom */
@@ -745,4 +757,8 @@ details[open] {
 
 .footer-bottom .copyright {
     font-size: 14px;
+}
+
+.footer-social i:hover{
+    color: #000721;
 }

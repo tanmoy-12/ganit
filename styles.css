@@ -407,7 +407,7 @@ nav a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 .story-numbers-box{
     padding: 20px;
@@ -626,11 +626,11 @@ details[open] {
     border: 1px solid #ccc;
 }
 
-/*==subscribe=====================*/
+/*===============subscribe=====================*/
 #subscribe{
     max-width: 1000px;
     width: 90%;
-    background-color:#ac7517;
+    background-color:#9f6a45;
     padding: 50px;  
     border-radius: 10px;
     margin: 50px auto;
@@ -659,8 +659,8 @@ details[open] {
 }
 .subscribe-box input{
     width: 100%;
-    height: 50%;
-    padding: 0px 10px;
+    height: 96%;
+    padding: 10px 10px;
     border: none;
     outline: none;
 }

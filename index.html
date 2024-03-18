@@ -20,8 +20,8 @@
             <img src="logo.png" height="60px" width="130px">
         </div>
         <div class="menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About Us</a></li>
+            <li><a >Home</a></li>
+            <li><a >About Us</a></li>
             <li class="dropdown-services">
                 <a href="/">Courses</a>
                 <ul class="dropdown-content">
@@ -34,7 +34,7 @@
             </li>
             <li><a href="#">Parent's Corner</a></li>
             <li><a href="faculty.html">Faculty</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a >Contact Us</a></li>
         </div>
     </nav>
 
@@ -363,17 +363,49 @@
         }
 
         document.addEventListener('DOMContentLoaded', function () {
-    const detailsElements = document.querySelectorAll('details');
-    detailsElements.forEach(function (details) {
-        details.addEventListener('click', function () {
-            detailsElements.forEach(function (otherDetails) {
-                if (otherDetails !== details) {
-                    otherDetails.removeAttribute('open');
-                }
-            });
+            const detailsElements = document.querySelectorAll('details');
+            detailsElements.forEach(function (details) {
+                details.addEventListener('click', function () {
+                    detailsElements.forEach(function (otherDetails) {
+                        if (otherDetails !== details) {
+                            otherDetails.removeAttribute('open');
+                        }
+                     });
+                });
+             });
         });
+
+    document.addEventListener('DOMContentLoaded', function () {
+    // Get the navigation links
+    const homeLink = document.querySelector('.menu li:nth-child(1) a');
+    const aboutLink = document.querySelector('.menu li:nth-child(2) a');
+    const contactLink = document.querySelector('.menu li:nth-child(6) a');
+    
+    // Add event listener for the home link
+    homeLink.addEventListener('click', function (event) {
+        // Refresh the page
+        location.reload();
     });
-});
+
+
+    aboutLink.addEventListener('click', function (event) {
+        // Scroll to the about us section
+        document.querySelector('#our_story').scrollIntoView({
+            behavior: 'smooth'
+        });
+        // Prevent default link behavior
+        event.preventDefault();
+    });
+
+    contactLink.addEventListener('click', function (event) {
+        // Scroll to the contact section
+        document.querySelector('#contact').scrollIntoView({
+            behavior: 'smooth'
+        });
+        // Prevent default link behavior
+        event.preventDefault();
+    });
+})
 
     </script>
 </body>

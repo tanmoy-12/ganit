@@ -76,6 +76,7 @@ a{
     color: #fff;
     text-decoration: none;
     padding: 5px 14px;
+    cursor: pointer;
 }
 
 .dropdown-content {

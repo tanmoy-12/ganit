@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Set the background image */
@@ -12,26 +13,33 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://wallpaperaccess.com/full/6367121.jpg'); /* Replace 'background-image.jpg' with your image path */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent), linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent), url('https://wallpaperaccess.com/full/6367121.jpg'); /* Replace 'background-image.jpg' with your image path */
     background-size: cover;
+    backdrop-filter: blur(15px);
+    background-color: rgba(105, 105, 105, 0.834);
     z-index: -1; /* Ensure the background image is behind other content */
 }
 
 /* Style the content */
-.wrapper-main {
+.wrapper-main{
     position: relative;
     z-index: 1; /* Ensure the content is above the background image */
-    backdrop-filter: blur(5px);
-    background-color: rgba(105, 105, 105, 0.834);
-    padding: 20px;
-    color: #00081d; /* Set text color */
+    color: #dc9f2d; /* Set text color */
     font-family: "Roboto", sans-serif; /* Set font family */
     height: 100vh;
 }
 
+.main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
 .content h1 {
     font-size: 36px; /* Set heading font size */
-    margin-bottom: 20px; /* Add space below heading */
+    margin-bottom: 40px; /* Add space below heading */
 }
 
 .content p {
@@ -39,3 +47,68 @@
     line-height: 1.5; /* Set line height for better readability */
     margin-bottom: 10px; /* Add space below paragraphs */
 }
+
+
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 400px;
+    border:none;
+    border-radius: 8px;
+    margin: 20px;
+  }
+  
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform ease 1.3s;
+    transform-style: preserve-3d;
+  }
+  
+ 
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  
+  .flip-card-back {
+    padding: 30px 10px;
+    background-color: rgb(0, 26, 52);
+    color: white;
+    border-radius: 8px;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back p{
+    font-size: large;
+    font-weight: 600;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .faculty-container1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    margin: 0 auto;
+  }

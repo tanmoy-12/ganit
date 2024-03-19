@@ -97,7 +97,9 @@
                     </p>
                 </div>
                 <div class="image">
-                    <img src="2.jpg" alt="header image" />
+                    <video  src="video.mp4" alt="video" width="500px" height="350px" autoplay controls>
+                        Your browser does not support the video tag.
+                      </video>
                 </div>
             </div>
         </div>
@@ -235,7 +237,7 @@
         <div class="customer">
             <!-- Contact Card -->
             <div id="contact" class="customer-bg"></div>
-            <div class="customer-card">
+            <div id="wp" class="customer-card">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Call or Whatsapp Us at</h2>
                 <h3 style="color: #ff5500;">(+91) 9345678954</h3>
@@ -361,6 +363,18 @@
             const sidebar = document.querySelector('.sidebar');
             sidebar.style.display = 'none';
         }
+
+        document.addEventListener("DOMContentLoaded", function() {
+  var video = document.getElementById("myVideo");
+
+  video.addEventListener("click", function() {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+});
 
         document.addEventListener('DOMContentLoaded', function () {
             const detailsElements = document.querySelectorAll('details');

@@ -9,6 +9,9 @@ body{
     color: #1d1e19;
     font-family: "Poppins", sans-serif !important;
     height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 a{
@@ -784,7 +787,7 @@ details[open] {
 
 @media (max-width:1070px)  {
     .navbar{
-        display: flex;
+        display: none;
         flex-direction: column !important;
     }
 
@@ -797,44 +800,123 @@ details[open] {
     .menu li a{
         padding:7px 0.4rem;
     }
+
+    .content{
+        width: 100%;
+    }
+
+    .header-element{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faq-container{
+        width: 90%;
+    }
 }
 
-@media (max-width:550px)  {
-    #pc-view{
+@media (max-width:850px){
+    #our_story{
+        grid-template-columns: 1fr;
+        width: 80%;
+        background-image: url("1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .our-story-img{
         display: none;
+    }
+
+    .our-stroy-text{
+        width: 100%;
+        background-color: #7d7d7da1;
+        backdrop-filter: blur(10px);
+    }
+
+    .our-stroy-text p{
+        color: #000d1a;
+    }
+
+    .story-numbers-container span{
+        color: #000d1a;
+        font-weight: 700;
+    }
+
+    .footer-container{
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-company-box{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .footer-link-box{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width:800px)  {
+
+    .service-card{
+        width: 230px;
+        height: 250px;
+        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+    }
+
+    .card-bottom h2{
+        font-size: 1.2rem !important;
+    }
+
+    .students-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .resources-content{
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .resources-text{
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+    }
+
+}
+
+@media (max-width:650px){
+    .customer{
+        margin: 20px auto;
+    }
+
+    .customer-card h2{
+        font-size: 1.4rem !important;
     }
     
-    #mobile-view{
-        display: contents;
+    .customer-card h3{
+        font-size: medium;
     }
 
-    .navbar{
-        height: 80px;
+    .service-card{
+        width: 150px;
+        height: 180px;
+    }
+    
+    .card-bottom h2{
+        font-size: 0.9rem !important;
+        margin-top: 0;
     }
 
-    .menu-toggler{
-        left: 10px;
-        position: absolute;
-    }
-
-    .menu-toggler h2{
-        font-size: 40px;
-        color: #fff;
-    }
-
-    .sidebar{
-        position: fixed;
-        left: 0;
-        top: 80px;
-        height: 100vh;
-        width: 250px;
-        z-index: 999;
-        background-color: rgba(157, 157, 157, 0.559);
-        backdrop-filter: blur(10px);
-        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-        flex-direction: column;
-        display: none;
-        align-items: flex-start;
-        justify-content: flex-start;
+    #wp h3{
+        font-weight: 800;
     }
 }
+
+@media (ma)

@@ -1,11 +1,10 @@
-
 *{
     padding: 0;
     margin: 0;
 }
 
 body{
-    background-color: #fff4d5 !important;
+    background-color: #F2ECBE !important;
     color: #1d1e19;
     font-family: "Poppins", sans-serif !important;
     height: 100vh;
@@ -38,7 +37,7 @@ a{
 
 
 .navbar {
-    background-color: rgb(96, 70, 0);
+    background-color: #9A3B3B;
     color: #fff;
     font-family: Arial, sans-serif;
     height: 70px;
@@ -278,7 +277,7 @@ nav a{
 }
 
 .container-1{
-    background-color: #7b7b7b8f;
+    background-color: #E2C799;
     width: 100%;
     margin: 0 auto;
     display: grid;
@@ -290,6 +289,10 @@ nav a{
     display: flex;
     max-width: 1400px;
     flex-direction: column;
+  }
+
+  .choose-left h3{
+    color: rgb(37 0 0 / 46%);
   }
   
   .choose-left{
@@ -318,7 +321,7 @@ nav a{
     width: 280px;
     height: 300px;
     margin: 20px;
-    background-color: #ffd499;
+    background-color: #F2ECBE;
     color: #000721;
     border-radius: 12px;
     padding: 12px;
@@ -332,7 +335,7 @@ nav a{
   
   
   .card-top{
-    color: #ff4800;
+    color: #9A3B3B;
     font-size: 46px;
     text-align: center;
     padding: 10px;
@@ -614,7 +617,8 @@ nav a{
     max-width: 900px;
     width: 999.9px;
     margin: 90px auto;
-    background-color: #a4a4a467;
+    background-color: #9b4a01;
+    color: whitesmoke;
 }
 
 .faq-container h2{
@@ -640,11 +644,122 @@ summary {
 }
 
 details[open] {
-    background-color: #f0f0f0;
+    background-color: #C08261;
     border: 1px solid #ccc;
 }
 
-/*===============subscribe=====================*/
+.clip-art img {
+    background-color: transparent; /* Remove background color */
+    width: 281px; /* Set the width to make it bigger */
+    height: 355px;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .action-wala {
+    padding-left: 40px;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; /* Add some margin to separate the sections */
+  }
+  
+  .clip-art {
+    margin-right: 20px; /* Add margin to create space between the image and the form */
+  }
+  
+  .form-of {
+    display: flex;
+    flex-direction: row; /* Align form elements vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    width: 700px;
+    height: 460px;
+  }
+  
+  .contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #9A3B3B;
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center; 
+  }
+  
+  .contact-section p {
+    font-size: 1.1em;
+    color: #9A3B3B;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+  }
+  
+  label {
+    /* display: block; */
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .namee,
+  .emaill,
+  .messagee {
+    /* height: 60px;
+    width: 450px; */
+    border-radius: 10px;
+    border-color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #3b95b6;
+    background-color: #ffffff;
+  }
+  
+  .messagee {
+    height: 90px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #666;
+  }
+  
+  button {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: #9A3B3B;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  
+  button:hover {
+      background-color: #686868;
+  }
+  
+
 #subscribe{
     max-width: 1000px;
     width: 90%;

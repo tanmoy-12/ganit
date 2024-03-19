@@ -253,14 +253,15 @@ nav a{
   }
   
 
-  .image {
+  .video {
     position: relative;
     text-align: center;
     isolation: isolate;
     display: flex;
-    justify-content: center;
     align-items: center;
+    display: grid;
     margin: 0 auto;
+    padding: 40px;
 }
 
 
@@ -269,6 +270,11 @@ nav a{
     max-width: 300px;
     height: auto;
     border-radius: 50%;
+}
+
+#myVideo{
+    width:"360px" ;
+    height:"350px";  
 }
 
 .container-1{
@@ -919,4 +925,47 @@ details[open] {
     }
 }
 
-@media (ma)
+
+@media (max-width:450px){
+    .wrapper-main{
+        max-width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .carousel-container{
+        display: none;
+    }
+
+    .service-card{
+        height: 250px;
+        width: 300px;
+    }
+
+    .content{
+        width: 85%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .header-element{
+        padding: 30px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .choose-right{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #subscribe{
+        padding: 0;
+        width: 80%;
+    }
+}

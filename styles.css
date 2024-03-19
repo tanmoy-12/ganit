@@ -965,7 +965,11 @@ details[open] {
     .choose-right{
         display: flex;
         flex-direction: column;
+    }
 
+    #our_story{
+        border: 5px solid #ffff;
+        margin: 30px auto;
     }
 
     .our-stroy-text p{

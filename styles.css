@@ -942,13 +942,17 @@ details[open] {
 
     .service-card{
         height: 250px;
-        width: 300px;
+        width: 280px;
     }
 
     .content{
         width: 85%;
         margin: 0 auto;
         padding: 10px;
+    }
+
+    .card-bottom h2{
+        font-size: 1.6rem !important;
     }
 
     .header-element{
@@ -962,6 +966,10 @@ details[open] {
         display: flex;
         flex-direction: column;
 
+    }
+
+    .our-stroy-text p{
+        font-size: medium;
     }
 
     #subscribe{

@@ -1010,6 +1010,26 @@ details[open] {
         width: 90%;
     }
 
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-of{
+        width: 98%;
+        max-width: 700px;
+    }
+
+    .action-wala{
+        padding-left: 10px;
+    }
+
+    .action-wala form{
+        width: 92%;
+    }
+
 }
 
 @media (max-width:650px){
@@ -1037,6 +1057,74 @@ details[open] {
 
     #wp h3{
         font-weight: 800;
+    }
+}
+
+@media (max-width:600px){
+
+    .carousel-container{
+        display: none;
+    }
+
+    .header-element{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto;
+    }
+
+    .container-1{
+        align-items: center;
+        margin: 30px auto;
+    }
+
+    .choose-right{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .customer{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent), linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent), url("5.jpeg");
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .customer-bg{
+        display: none;
+    }
+
+    .clip-art{
+        margin: 0;
+        display: none;
+    }
+
+    .contact-section{
+        max-width: 460px;
+        width: 90%;
+    }
+
+    .form-of{
+        width: 100%;
+    }
+
+    .action-wala{
+        width: 100%;
+        padding: 20px;
+        
+    }
+
+    .get-in-touch{
+        text-align: center;
+    }
+
+    .submit-f{
+        margin: 0 auto;
+        align-self: center;
+        display:flex ;
     }
 }
 
@@ -1134,32 +1222,8 @@ details[open] {
         width: 80%;
     }
 
-    .clip-art{
-        margin: 0;
-        display: none;
-    }
-
     .contact-section{
         max-width: 370px;
         width: 90%;
-    }
-
-    .form-of{
-        width: 100%;
-    }
-
-    .action-wala{
-        padding: 10px;
-        
-    }
-
-    .get-in-touch{
-        text-align: center;
-    }
-
-    .submit-f{
-        margin: 0 auto;
-        align-self: center;
-        display:flex ;
     }
 }

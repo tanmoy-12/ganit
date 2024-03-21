@@ -559,7 +559,7 @@ nav a{
 }
 
 #reource-2{
-    background-color: #ffe6d7c0 !important;
+    background-color: #fa98fde9 !important;
 }
 
 #contact{
@@ -617,7 +617,7 @@ nav a{
     max-width: 900px;
     width: 999.9px;
     margin: 90px auto;
-    background-color: #9b4a01;
+    background-color: #a16014;
     color: whitesmoke;
 }
 
@@ -1051,6 +1051,22 @@ details[open] {
         margin: 20px auto;
     }
 
+    .header-element{
+        width: 90%;
+    }
+
+    .myvideo{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .myvideo iframe{
+        width: 300px;
+        height: 270px;
+    }
+
     .carousel-container{
         display: none;
     }
@@ -1087,12 +1103,63 @@ details[open] {
         margin: 30px auto;
     }
 
+    #wp{
+        margin: 20px auto;
+    }
+
+    #our_story{
+        width: 90%;
+    }
+
+    .our-stroy-text{
+        padding: 15px;
+    }
+
     .our-stroy-text p{
         font-size: medium;
+    }
+
+    .reource{
+        width: 90%;
+        max-width: 320px;
+        margin: 20px auto;
+    }
+
+    .student-image{
+        width: 250px;
     }
 
     #subscribe{
         padding: 0;
         width: 80%;
+    }
+
+    .clip-art{
+        margin: 0;
+        display: none;
+    }
+
+    .contact-section{
+        max-width: 370px;
+        width: 90%;
+    }
+
+    .form-of{
+        width: 100%;
+    }
+
+    .action-wala{
+        padding: 10px;
+        
+    }
+
+    .get-in-touch{
+        text-align: center;
+    }
+
+    .submit-f{
+        margin: 0 auto;
+        align-self: center;
+        display:flex ;
     }
 }

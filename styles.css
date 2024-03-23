@@ -283,6 +283,151 @@ a{
     height:"350px";  
 }
 
+
+.chat-bot-image {
+    position: fixed;
+    bottom: 20px; /* Adjust this value to change the distance from the bottom */
+    right: 25px; /* Adjust this value to change the distance from the right */
+    z-index: 9999; /* Ensures it appears over other elements */
+    margin: auto auto;
+}
+
+.chat-logo {
+    background-color: #000045; /* Set the background color if needed */
+    padding: 8px 8px 10px 8px; /* Adjust padding as needed */
+    border-radius: 50%; /* Makes it circular */
+    box-shadow: 6px 6px 8px 0.2px rgba(0, 0, 0, 0.5); /* Updated box shadow */
+}
+
+.chatbot-container {
+    display: none; /* Hide the chatbot container by default */
+    /* Remaining CSS styles */
+}
+
+
+.chatbot-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins';
+}
+
+#chatbot {
+    background-color: #f5f5f5;
+    border: 1px solid #eef1f5;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+#header {
+    background-color: #9A3B3B;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.message-container {
+    background: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#conversation {
+    height: 500px;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-message,
+.bot-message {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    justify-content: flex-end;
+}
+
+.bot-message {
+    justify-content: flex-start;
+}
+
+.chatbot-text {
+    font-size: 1.1em;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-message .chatbot-text {
+    background-color: #792f2f;
+    color: white;
+}
+
+.bot-message .chatbot-text {
+    background-color: #e9ecef;
+    color: #333333;
+}
+
+#input-form {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eef1f5;
+}
+
+#user-input {
+    flex: 1;
+    height: 60px;
+    border: 1px solid #eef1f5;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    background: #ffffff;
+    color: #333333;
+    border: none;
+}
+
+.send-icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#user-input:focus {
+    border-color: #333333;
+    outline: none;
+}
+
+#submit-button {
+    background-color: transparent;
+    border: none;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
 .container-1{
     background-color: #E2C799;
     width: 100%;

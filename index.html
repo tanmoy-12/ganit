@@ -412,7 +412,9 @@ frameborder="0"
         <div class="visitor">
             <!-- Footer Content -->
             <p>Total No of Visitors</p>
-            <h1><span id="visitorCount">0</span></h1> 
+            <!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+    <img src="https://hitwebcounter.com/counter/counter.php?page=12230927&style=0006&nbdigits=7&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>    
           
         </div>
     </footer>
@@ -433,27 +435,15 @@ frameborder="0"
         defer>
     </script> 
     <script>
-        
-// Function to increment visitor count
-function incrementVisitorCount() {
-    let count = localStorage.getItem('visitorCount');
-    count = count ? parseInt(count) + 1 : 1;
-    localStorage.setItem('visitorCount', count);
-    document.getElementById('visitorCount').textContent = count;
-}
-
-// Check if visitor count exists in local storage
-if (localStorage.getItem('visitorCount')) {
-    // If exists, retrieve and display
-    document.getElementById('visitorCount').textContent = localStorage.getItem('visitorCount');
-} else {
-    // If not exists, set initial count to 0 and display
-    localStorage.setItem('visitorCount', 0);
-    document.getElementById('visitorCount').textContent = 0;
-}
-
-// Call function to increment visitor count
-incrementVisitorCount();
+        const count1 = document.getElementsByClassName(".count");
+        countvisits();
+        function countvisits(){
+            fetch("")
+            .then((res)=>res.json())
+            .then((res)=>{
+                count1.innerHTML = res.value;
+            });
+        }
     </script>
     <script>
     document.addEventListener('DOMContentLoaded', function () {

@@ -1067,6 +1067,10 @@ footer{
     font-weight: 700;
 }
 
+.visitor h1{
+    color: #b56f00;
+}
+
 
 @media (max-width:1350px)  {
     .choose-right{

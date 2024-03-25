@@ -42,10 +42,16 @@ const facultyData = [
         subject: "Currently mentoring over 80 students, in MATHEMATICS from class V to X of WBBSE, ICSE, CBSE and guiding students in STATISTICS at 10+2 level"
     },
     {
-        name: "__",
-        age: 0,
+        name: "Pratik Dey",
+        age: 23,
         education: "B.Sc(Hons) in Physics from Chakdaha College(KU) and currently pursuing M.Sc in Physics from Aliah University",
         subject: "Physics faculty of GANiT"
+    },
+    {
+        name: "Shuvam Rajbanshi",
+        age: 23,
+        education: "B.Sc(Hons) in Geography from Calcutta University with 3 years teaching experience ",
+        subject: "Geography faculty of GANiT"
     }
 ];
 

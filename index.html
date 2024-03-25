@@ -368,47 +368,48 @@ frameborder="0"
 
         </div>
         <div class="footer-container">
-            <!-- Footer Content -->
-            <div class="footer-container">
-                <!--*comoany-box*-->
-                <div class="footer-company-box">
-                    <!--logo-->
-                    <a href="#" class="logo"><span>Ganit- </span>The Assurance</a>
-                    <!--details-->
-                    <p>Empowering minds through accessible and innovative educational solutions, Ganit - The Assurance is your trusted partner in academic excellence.</p>
-                    <!--social-box-->
-                    <div class="footer-social">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
+            <!--*comoany-box*-->
+            <div class="footer-company-box">
+                <!--logo-->
+                <a href="#" class="logo"><span>Ganit- </span>The Assurance</a>
+                <!--details-->
+                <p>Empowering minds through accessible and innovative educational solutions, Ganit - The Assurance is your trusted partner in academic excellence.</p>
+                <!--social-box-->
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
-
-                
-                <!--*link-box-->
-                <div class="footer-link-box">
-                    <strong>Quick Links</strong>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Services</a></li>
-                    </ul>
-                </div>
-                <!--*link-box-->
-                <div class="footer-link-box">
-                    <strong>Company</strong>
-                    <ul>
-                        <li><a href="#">Our Product's</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Disclaimer</a></li>
-                        <li><a href="#">Trem's and Condition's</a></li>
-                    </ul>
-                </div>
-                
-        
             </div>
+
+            
+            <!--*link-box-->
+            <div class="footer-link-box">
+                <strong>Quick Links</strong>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+            <!--*link-box-->
+            <div class="footer-link-box">
+                <strong>Company</strong>
+                <ul>
+                    <li><a href="#">Our Product's</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Trem's and Condition's</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="visitor">
+            <!-- Footer Content -->
+            <p>Total No of Visitors</p>
+            <h1><span id="visitorCount">0</span></h1> 
+          
         </div>
     </footer>
 
@@ -426,10 +427,31 @@ frameborder="0"
         chatbotId="dMgCmtQedqHVg6r8U_7fF"
         domain="www.chatbase.co"
         defer>
-        </script> 
+    </script> 
     <script>
         
+// Function to increment visitor count
+function incrementVisitorCount() {
+    let count = localStorage.getItem('visitorCount');
+    count = count ? parseInt(count) + 1 : 1;
+    localStorage.setItem('visitorCount', count);
+    document.getElementById('visitorCount').textContent = count;
+}
 
+// Check if visitor count exists in local storage
+if (localStorage.getItem('visitorCount')) {
+    // If exists, retrieve and display
+    document.getElementById('visitorCount').textContent = localStorage.getItem('visitorCount');
+} else {
+    // If not exists, set initial count to 0 and display
+    localStorage.setItem('visitorCount', 0);
+    document.getElementById('visitorCount').textContent = 0;
+}
+
+// Call function to increment visitor count
+incrementVisitorCount();
+    </script>
+    <script>
     document.addEventListener('DOMContentLoaded', function () {
     // Get the navigation links
     const aboutLink = document.querySelector('.menu li:nth-child(2) a');

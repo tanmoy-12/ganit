@@ -36,17 +36,29 @@ window.open(mailtoURL);
 form.reset();
 });
 
-// Get references to the chat logo image and the chatbot container
-const chatLogoImg = document.getElementById('chat-logo-img');
-const chatbotContainer = document.querySelector('.chatbot-container');
 
-// Add event listener to the chat logo image
-chatLogoImg.addEventListener('click', function() {
-    // Toggle the visibility of the chatbot container
-    if (chatbotContainer.style.display === 'block') {
-        chatbotContainer.style.display = 'none';
-    } else {
-        chatbotContainer.style.display = 'block';
-    }
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'flex';
+}
+
+function hideSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'none';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const detailsElements = document.querySelectorAll('details');
+  detailsElements.forEach(function (details) {
+      details.addEventListener('click', function () {
+          detailsElements.forEach(function (otherDetails) {
+              if (otherDetails !== details) {
+                  otherDetails.removeAttribute('open');
+              }
+           });
+      });
+   });
 });
+
+
 

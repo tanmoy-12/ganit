@@ -968,7 +968,7 @@ details[open] {
 .footer-container {
     display: flex;
     justify-content: center;
-    padding:40px 20px;
+    padding:40px ;
     background-color: #f2f2f2;
 }
 
@@ -1138,6 +1138,17 @@ details[open] {
     .footer-link-box{
         width: 100%;
         margin: 20px 0;
+    }
+
+    #maps-container{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    #maps{
+        width: 500px;
     }
 }
 
@@ -1369,6 +1380,11 @@ details[open] {
         font-size: x-large !important;
     }
 
+    
+    #maps{
+        width: 400px;
+    }
+
 }
 
 
@@ -1468,5 +1484,11 @@ details[open] {
     .contact-section{
         max-width: 370px;
         width: 90%;
+    }
+
+    
+    #maps{
+        width: 320px;
+        height: 260px;
     }
 }

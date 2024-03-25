@@ -12,10 +12,10 @@ const facultyData = [
         subject: "Computer Faculty of GANiT"
     },
     {
-        name: "Moumita Dutta",
-        age: 24,
-        education: "B.Sc and M.Sc from WBSU in Chemistry(Honours)",
-        subject: "Science faculty from class VII to X and Chemistry faculty of XI and XII"
+        name: "Supriti saha",
+        age: 27,
+        education: "B.Sc and M.Sc from Burdwan University in Microbiology(Honours)",
+        subject: "Biology Teacher of class 6 to class 10 ICSE and CBSE board and Class 12 WB board"
     },
     {
         name: "Debadreeta Ghosh",
@@ -34,6 +34,18 @@ const facultyData = [
         age: 49,
         education: "M.Sc in Applied Mathematics from Calcutta University, 1st class",
         subject: "Founder Teacher of GANiT The Assistance,20+ years teaching Mathematics at 10+2 level, specializing in WBJEE, JEE MAINS, and JEE ADVANCED(IIT) mentoring."
+    },
+    {
+        name: "Dipan Das",
+        age: 24,
+        education: "B.Sc in Statistics(Honours) from University of Kalyani & pursuing M.Sc in Mathematics from IGNOU",
+        subject: "Currently mentoring over 80 students, in MATHEMATICS from class V to X of WBBSE, ICSE, CBSE and guiding students in STATISTICS at 10+2 level"
+    },
+    {
+        name: "__",
+        age: 0,
+        education: "B.Sc(Hons) in Physics from Chakdaha College(KU) and currently pursuing M.Sc in Physics from Aliah University",
+        subject: "Physics faculty of GANiT"
     }
 ];
 

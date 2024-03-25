@@ -11,7 +11,7 @@
     color: #00000b; /* Set text color */
     font-family: "Roboto", sans-serif; /* Set font family */
     height: 100vh;
-    margin-top: 500px;
+    margin-top: 300px;
 }
 
 .main{
@@ -21,6 +21,7 @@
     text-align: center;
 
 }
+
 
 .content h1 {
     font-size: 36px; /* Set heading font size */
@@ -106,5 +107,15 @@
       display: flex;
       position: relative !important;
       z-index: 1;
+    }
+
+    .gap{
+      height: 1360px;
+    }
+  }
+
+  @media (min-width:450px) and (max-width:550px){
+    .gap{
+      height: 100px;
     }
   }
